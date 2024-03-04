@@ -1,3 +1,131 @@
-.container .sidebar{
-    background-color: aqua;
+User
+body{
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
+
+}
+.header{
+    background-color: #A7BEAE;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* row-gap: 10px; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.search-container{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+input #search-box{
+    width: 100%;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #dde7f3;
+}
+
+.notification{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* .logo img{
+    display: flex;
+    gap: var(--logo-rem
+    );
+    height: 2.4rem;
+} */
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.greeting{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sidebar{
+    background-color:#E7E8D1;
+    grid-row: 1 / 3; 
+    font: #2F3C7E
+
+}
+.name{
+    font-size: 1.6rem;
+    display: inline-grid;
+    grid-auto-flow: column;
+}
+svg{
+    display: grid;
+    height: 2.1rem;
+}
+
+.side-content{
+    display: grid;
+    gap: 40px 0;
+    text-decoration: none;
+    padding: 20px;
+    color: aliceblue;
+    font-weight: bold ;
+}
+.first-half{
+    margin-bottom: 50px;
+    /* padding-left: 40px; */
+    font-size: large;
+}
+.second-half{
+    margin-bottom: 50px;
+    /* padding-left: 40px; */
+    font-size: large;
+}
+.tab{
+    display: inline-grid;
+    grid-auto-flow: column;
+}
+div.link{
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+}
+.icon{
+    height: 2.0rem;
+}
+.admin{
+    height: 6.0rem;
+}
+.main{
+    background-color: red;
+    display: grid;
+    gap: 13px;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+.right-content{
+    background-color: yellow;
+}
+.sidebar-main img{
+    height: 2.0rem;
+}
+.search-icon img{
+    height: 1.6rem;
+}
+a{
+    text-decoration: none;
+    color: #B85042;
 }

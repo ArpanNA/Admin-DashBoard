@@ -1,58 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="logo">
-                <img src="Side-logo.jpeg" alt="sideBar-img">
-                <span>DashBoard</span>
+            <div class="header">
+                <div class="search">
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <img src="search.png" alt="search">
+                        </div>
+                        <input type="text" id="search-box" name="Search">
+                    </div>
+                </div>
+                <div class="header-intro">
+                    <div class="notification">
+                        <img class="icon" src="notification.png" alt="notify">
+                    </div>
+                    <div class="intro">
+                        <img class="admin" src="admin.png" alt="">
+                        <span>Morgan Oakley</span>
+                    </div>
+                </div>
+                <div class="greeting">
+                    <img class="admin" src="admin.png" alt="">
+                    <p>Hi there,</p>
+                    <h2>Morgan Oakley(@morgan)</h2>
+                </div>
+                <div class="option">
+                    <button type="button">New</button>
+                    <button type="button">Upload</button>
+                    <button type="button">Share</button>
+                </div>
             </div>
-            <div class="sideBar-main">
-                <ul>
-                    <li>
-                        <img src="home.png" alt="Home">
-                        <span>Home</span>
-                    </li>
-                    <li>
-                        <img src="profile.png" alt="profile">
-                        <span>Profile</span>
-                    </li>
-                    <li>
-                        <img src="message.png" alt="messages">
-                        <span>Messages</span>
-                    </li>
-                    <li>
-                        <img src="history.png" alt="History">
-                        <span>History</span>
-                    </li>
-                    <li>
-                        <img src="task.png" alt="Tasks">
-                        <span>Tasks</span>
-                    </li>
-                    <li>
-                        <img src="community.png" alt="communities">
-                        <span>Communities</span>
-                    </li>
-                    <li>
-                        <img src="setting.png" alt="setting">
-                        <span>Settings</span>
-                    </li>
-                    <li>
-                        <img src="support.png" alt="support">
-                        <span>Support</span>
-                    </li>
-                    <li>
-                        <img src="privacy.png" alt="Privacy">
-                        <span>Privacy</span>
-                    </li>
-                </ul>
-            </div>
+            <div class="sidebar">
+                <div class="side-content">
+                    <div class="name">
+                        <div class="side-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg></div>
+                        <div class="sidebar-title"><a href="#">Dashboard</a></div>
+                    </div>
+                    <div class="sidebar-main">
+                        <div class="first-half">
+                            <div class="tab">
+                                <div id="home-icon" class="sidebar-icon">
+                                    <img src="home.png" alt="home">
+                                </div>
+                                <div class="link"><a href="#">Home</a></div>
+                            </div>
+                            <div class="tab">
+                                <div id="profile-icon" class="sidebar-icon">
+                                    <img src="profile.png" alt="profile">
+                                </div>
+                                <div class="link"><a href="#">Profile</a></div>
+                            </div>
+                            
+                            <div class="tab">
+                                <div id="message-icon" class="sidebar-icon">
+                                    <img src="message.png" alt="message">
+                                </div>
+                                <div class="link"><a href="#">Message</a></div>
+                            </div>
+                            <div class="tab">
+                                <div id="history-icon" class="sidebar-icon">
+                                    <img src="history.png" alt="hist">
+                                </div>
+                                <div class="link"><a href="#">History</a></div>
+                            </div>
+                            <div class="tab">
+                                <div id="task-icon" class="sidebar-icon">
+                                    <img src="task.png" alt="task">
+                                </div>
+                                <div class="link"><a href="#">Tasks</a></div>
+                            </div>
+                            <div class="tab">
+                                <div id="communities-icon" class="sidebar-icon">
+                                    <img src="community.png" alt="comm">
+                                </div>
+                                <div class="link"><a href="#">Communities</a></div>
+                            </div>
+                        </div>
+                        <div class="second-half">
+                            <div class="tab">
+                                <div id="setting-icon" class="sidebar-icon">
+                                    <img src="setting.png" alt="sett">
+                                </div>
+                                <div class="link"><a href="#">Settings</a></div>
+                            </div>
+                            <div class="tab">
+                                <div id="support-icon" class="sidebar-icon">
+                                    <img src="support.png" alt="support">
+                                </div>
+                                <div class="link"><a href="#">Support</a></div>
+                            </div>
+                            <div class="tab">
+                                <div id="privacy-icon" class="sidebar-icon">
+                                    <img src="privacy.png" alt="priv">
+                                </div>
+                                <div class="link"><a href="#">Privacy</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+           </div>
+           <div class="main">
+                <div class="content">
+                    <p>Your Project</p>
+                    <div class="cards" id="no-1">
+                        <div class="title">Super Cool Project</div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore.
+                        </div>
+                        <div class="card-btn">
+                            <button id="favouraite-btn" class="interaction-btn">btn</button>
+                            <button id="watch-btn" class="interaction-btn"></button>
+                            <button id="share-btn" class="interaction-btn"></button>
+                        </div>
+                    </div>
+                    <div class="cards" id="no-2">
+                        <div class="title">Less Cool project</div>
+                        <div class="card-content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe cumque accusantium
+                            ad eaque
+                            dolorum non necessitatibus sint iure nihil ipsam.
+                        </div>
+                        <div class="card-btn">
+                            <button id="favouraite-btn" class="interaction-btn"></button>
+                            <button id="watch-btn" class="interaction-btn"></button>
+                            <button id="share-btn" class="interaction-btn"></button>
+                        </div>
+                    </div>
+                    <div class="cards" id="no-3">
+                        <div class="title">Impossible App</div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class="card-btn">
+                            <button id="favouraite-btn" class="interaction-btn"></button>
+                            <button id="watch-btn" class="interaction-btn"></button>
+                            <button id="share-btn" class="interaction-btn"></button>
+                        </div>
+                    </div>
+                    <div class="cards" id="no-4">
+                        <div class="title">Easy Peasy App</div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perspiciatis dolorum ad
+                            eveniet
+                            suscipit minima.
+                        </div>
+                        <div class="card-btn">
+                            <button id="favouraite-btn" class="interaction-btn"></button>
+                            <button id="watch-btn" class="interaction-btn"></button>
+                            <button id="share-btn" class="interaction-btn"></button>
+                        </div>
+                    </div>
+                    <div class="cards" id="no-5">
+                        <div class="title">Ad Blocker</div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore.
+                        </div>
+                        <div class="card-btn">
+                            <button id="favouraite-btn" class="interaction-btn"></button>
+                            <button id="watch-btn" class="interaction-btn"></button>
+                            <button id="share-btn" class="interaction-btn"></button>
+                        </div>
+                    </div>
+                    <div class="cards" id="no-6">
+                        <div class="title">Money Maker</div>
+                        <div class="card-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatem
+                            necessitatibus pariatur
+                            vero exercitationem impedit eaque, molestiae dicta?
+                        </div>
+                        <div class="card-btn">
+                            <button id="favouraite-btn" class="interaction-btn"></button>
+                            <button id="watch-btn" class="interaction-btn"></button>
+                            <button id="share-btn" class="interaction-btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="announcement">
+                        <p>Announcement</p>
+                        <div class="announcement-container">
+                            <div class="announcement-1">
+                                <div class="announcement-title">
+                                    Site Maintenance
+                                </div>
+                                <div class="announcement-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="announcement-2">
+                                <div class="announcement-title">
+                                    Community Share Day
+                                </div>
+                                <div class="announcement-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+                                    mollitia?
+                                </div>
+                            </div>
+                            <div class="announcement-3">
+                                <div class="announcement-title">
+                                    Upadated Privacy Policy
+                                </div>
+                                <div class="announcement-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti distinctio
+                                    veritatis aut officia tenetur!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="trends">Trending</p>
+                    <div class="trendings">
+                        <div class="trending">
+                            <div class="trending-content">
+                                <img src="" alt="" id="first-project" class="trending-user">
+                                <div class="user-detail">
+                                    <div class="user">@tegan</div>
+                                    <div class="trending-project">
+                                        World Peace Builder
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <img src="" alt="" id="first-project" class="trending-user">
+                                <div class="user-detail">
+                                    <div class="user">@morgan</div>
+                                    <div class="trending-project">
+                                        Super Cool Project
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <img src="" alt="" id="first-project" class="trending-user">
+                                <div class="user-detail">
+                                    <div class="user">kendall</div>
+                                    <div class="trending-project">
+                                        Life Changing App
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-content">
+                                <img src="" alt="" id="first-project" class="trending-user">
+                                <div class="user-detail">
+                                    <div class="user">@alex</div>
+                                    <div class="trending-project">
+                                        No Traffic Maker
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
         </div>
-    </div>
 </body>
 </html>
